@@ -1,0 +1,54 @@
+{
+	"data2": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Manejo de Bases de Datos",
+			"description": "Product Description",
+			"image": "shoes.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1001",
+			"code": "f230fh0g3",
+			"name": "Programación",
+			"description": "Product Description",
+			"image": "yellow-earbuds.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1002",
+			"code": "f230fh0g3",
+			"name": "Manejo de Bases de Datos",
+			"description": "Product Description",
+			"image": "yoga-mat.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "f230fh0g3",
+			"name": "Comunicación y Paciencia",
+			"description": "Product Description",
+			"image": "yoga-mat.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "f230fh0g3",
+			"name": "Manejo del Estrés",
+			"description": "Product Description",
+			"image": "bamboo-watch.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		}
+	]
+}
