@@ -5,7 +5,7 @@
 			"code": "f230fh0g3",
 			"name": "Experto en QA, diseño, animación y modelado",
 			"description": "Product Description",
-			"image": "pink-purse.jpg",
+			"image": "QA.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
@@ -15,7 +15,7 @@
 			"code": "f230fh0g3",
 			"name": "Liderazgo y Trabajo en Equipo",
 			"description": "Product Description",
-			"image": "blue-t-shirt.jpg",
+			"image": "Liderazgo.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
@@ -25,7 +25,7 @@
 			"code": "f230fh0g3",
 			"name": "Perfeccionismo",
 			"description": "Product Description",
-			"image": "black-watch.jpg",
+			"image": "perfeccionismo.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
@@ -35,7 +35,7 @@
 			"code": "f230fh0g3",
 			"name": "Creatividad y Pasión por el Arte",
 			"description": "Product Description",
-			"image": "brown-purse.jpg",
+			"image": "arte.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5

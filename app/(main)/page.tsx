@@ -353,10 +353,6 @@ const Dashboard = () => {
                     <p className="habilidades">A pesar de mi amplio conocimiento en otras áreas, la programación es un aspecto en el que siento que necesito mejorar. Esta limitación podría afectar mi capacidad para abordar ciertos proyectos de manera autónoma o para realizar tareas que requieran una integración técnica más profunda.
                     </p>
 
-                    <li><strong>Manejo de Bases de Datos:</strong></li>
-                    <p className="habilidades">En el pasado, experimenté dificultades al trabajar con bases de datos. Este desafío me ha generado cierta inseguridad en tareas similares, lo que indica un área en la que podría enfocarme para desarrollar mayor confianza y habilidad.
-                    </p>
-
                     <li><strong>Comunicación y Paciencia:</strong></li>
                     <p className="habilidades">Aunque soy una líder competente y una excelente trabajadora en equipo, reconozco que necesito mejorar en la comunicación y en la paciencia. Fortalecer estas habilidades blandas me permitiría manejar mejor los conflictos, dar y recibir retroalimentación constructiva, y mantener un ambiente de trabajo más positivo.
                     </p>

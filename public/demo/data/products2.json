@@ -5,7 +5,7 @@
 			"code": "f230fh0g3",
 			"name": "Manejo de Bases de Datos",
 			"description": "Product Description",
-			"image": "shoes.jpg",
+			"image": "dataBase.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
@@ -15,17 +15,7 @@
 			"code": "f230fh0g3",
 			"name": "Programación",
 			"description": "Product Description",
-			"image": "yellow-earbuds.jpg",
-			"category": "Accessories",
-			"quantity": 24,
-			"rating": 5
-		},
-		{
-			"id": "1002",
-			"code": "f230fh0g3",
-			"name": "Manejo de Bases de Datos",
-			"description": "Product Description",
-			"image": "yoga-mat.jpg",
+			"image": "programacion.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
@@ -35,7 +25,7 @@
 			"code": "f230fh0g3",
 			"name": "Comunicación y Paciencia",
 			"description": "Product Description",
-			"image": "yoga-mat.jpg",
+			"image": "comunicacionYpaciencia.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
@@ -45,7 +35,7 @@
 			"code": "f230fh0g3",
 			"name": "Manejo del Estrés",
 			"description": "Product Description",
-			"image": "bamboo-watch.jpg",
+			"image": "estres.jpg",
 			"category": "Accessories",
 			"quantity": 24,
 			"rating": 5
