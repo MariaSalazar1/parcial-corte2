@@ -50,7 +50,7 @@ const MediaDemo = () => {
     ];
 
     useEffect(() => {
-        ProductService.getProductsSmall().then((products) => setProducts(products));
+        ProductService.getFortalezas().then((products) => setProducts(products));
 
         PhotoService.getImages().then((images) => setImages(images));
     }, []);
