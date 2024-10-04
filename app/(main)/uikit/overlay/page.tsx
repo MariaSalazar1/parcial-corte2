@@ -57,7 +57,7 @@ const OverlayDemo = () => {
     };
 
     useEffect(() => {
-        ProductService.getProductsSmall().then((data) => setProducts(data));
+        ProductService.getFortalezas().then((data) => setProducts(data));
     }, []);
 
     const toggle = (event: ButtonEvent) => {
