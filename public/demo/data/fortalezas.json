@@ -1,0 +1,44 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Experto en QA, diseño, animación y modelado",
+			"description": "Poseo un conocimiento profundo en áreas clave de la Ingeniería Multimedia, destacándome en aseguramiento de calidad (QA), diseño gráfico, animación y modelado. Estas competencias técnicas me permiten abordar proyectos desde múltiples enfoques, asegurando tanto la funcionalidad como la estética en cada entrega.",
+			"image": "QA.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1001",
+			"code": "f230fh0g3",
+			"name": "Liderazgo y Trabajo en Equipo",
+			"description": "Me distingo por mi capacidad para liderar y trabajar en equipo. Soy un profesional que sabe coordinar esfuerzos, motivar a sus compañeros y garantizar que los proyectos se completen de manera efectiva. Mi habilidad para colaborar lo convierte en un miembro valioso en cualquier equipo.",
+			"image": "Liderazgo.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1002",
+			"code": "f230fh0g3",
+			"name": "Perfeccionismo",
+			"description": "Con una atención al detalle excepcional, siempre busco entregar trabajos de alta calidad. Este perfeccionismo asegura que mis proyectos cumplan consistentemente con altos estándares, beneficiando tanto a mi equipo como a los clientes.",
+			"image": "perfeccionismo.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "f230fh0g3",
+			"name": "Creatividad y Pasión por el Arte",
+			"description": "Tengo un fuerte interés en los videojuegos, el dibujo y la pintura, lo que refleja una vena creativa robusta. Esta creatividad es una ventaja en cualquier proyecto que requiera un enfoque innovador y artístico.",
+			"image": "arte.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		}
+	]
+}
