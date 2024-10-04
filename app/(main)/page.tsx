@@ -123,8 +123,8 @@ const Dashboard = () => {
     }, [layoutConfig.colorScheme]);
 
 
-    const [productsS, setProductsS] = useState<Demo.Product[]>([]);
-    const [productsP, setProductsP] = useState<Demo.Product[]>([]);
+    const [fortalezas, setFortalezas] = useState<Demo.Product[]>([]);
+    const [debilidades, setDebilidades] = useState<Demo.Product[]>([]);
 
 
 
@@ -147,11 +147,11 @@ const Dashboard = () => {
     ];
 
     useEffect(() => {
-        ProductService.getProductsSmall().then((data) => setProductsS(data));
+        ProductService.getFortalezas().then((data) => setFortalezas(data));
 
-        ProductService.getProducts2().then((data2) => {
+        ProductService.getDebilidades().then((data2) => {
             console.log("Products P:", data2); // Verificar datos obtenidos
-            setProductsP(data2);
+            setDebilidades(data2);
         });
 
     }, []);
@@ -163,12 +163,13 @@ const Dashboard = () => {
                     <img src={`/demo/images/product/${product.image}`} alt={product.name} className="w-6 shadow-2" />
                 </div>
                 <div>
+                    
                     <h4 className="p-mb-1">{product.name}</h4>
-                    <h6 className="mt-0 mb-3">{product.price}</h6>
-                    <span className={`product-badge status-${product.inventoryStatus?.toLowerCase()}`}>{product.inventoryStatus}</span>
+                    <p className='p-5' style={{textAlign:'justify'}}>{product.description}</p>
+                    
                     <div className="car-buttons mt-5">
 
-                        <Button type="button" className="mr-2" rounded icon="pi pi-search" onClick={() => setDisplayBasic(true)}></Button>
+                      
 
                     </div>
                 </div>
@@ -258,13 +259,7 @@ const Dashboard = () => {
         <div className="grid">
              <section id="sobre-mi"/>
 
-                        <Dialog header="Dialog" visible={displayBasic} style={{ width: '30vw' }} modal footer={basicDialogFooter} onHide={() => setDisplayBasic(false)}>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                id est laborum.
-                            </p>
-                        </Dialog>
+                        
 
 
              <div className="flex p-fluid "  style={{textAlign: "center"}}>
@@ -277,7 +272,8 @@ const Dashboard = () => {
     <div className="card">
 
       <section id="habilidades"/>
-        <img src="../demo/images/avatar/profile.jpg" alt="perfil" />
+      <img src="../demo/images/avatar/profile.webp" alt="perfil" style={{ maxWidth: '45%', height: '240px' }} />
+
         <h2>Sobre Mí</h2>
         <p>
           Soy estudiante de octavo semestre de ingeniería multimedia,
@@ -307,9 +303,9 @@ const Dashboard = () => {
                 <div className="card">
                 <h2 id="likeme" className="color_acento">Habilidades</h2>
                     <h5>Fortalezas</h5>
-                    <Carousel value={productsS} numVisible={3} numScroll={3} responsiveOptions={carouselResponsiveOptions} itemTemplate={carouselItemTemplate}></Carousel>
+                    <Carousel value={fortalezas} numVisible={3} numScroll={3} responsiveOptions={carouselResponsiveOptions} itemTemplate={carouselItemTemplate}></Carousel>
                     <h5>Debilidades</h5>
-                    <Carousel value={productsP} numVisible={3} numScroll={3} responsiveOptions={carouselResponsiveOptions} itemTemplate={carouselItemTemplate}></Carousel>
+                    <Carousel value={debilidades} numVisible={3} numScroll={3} responsiveOptions={carouselResponsiveOptions} itemTemplate={carouselItemTemplate}></Carousel>
                 </div>
 
             </div>
@@ -319,78 +315,92 @@ const Dashboard = () => {
       <main>
           <div className="container"/>
 
-              <div className="card">
-                  <figure>
-                      <img src="recursos/perfil.jpg" alt=""/>
-                  </figure>
-                  <div className="contenido">
-                    <h3>Fortalezas</h3>
-                    <ul>
-                      <li><strong>Experto en QA, Diseño Gráfico, Animación y Modelado:</strong></li>
-                      <p className="habilidades">Poseo un conocimiento profundo en áreas clave de la Ingeniería Multimedia, destacándome en aseguramiento de calidad (QA), diseño gráfico, animación y modelado. Estas competencias técnicas me permiten abordar proyectos desde múltiples enfoques, asegurando tanto la funcionalidad como la estética en cada entrega.</p>
+          <div className="card">
+      <div className="contenido">
+        <h3>Actividades</h3>
 
-                      <li><strong>Liderazgo y Trabajo en Equipo:</strong></li>
-                      <p className="habilidades">Me distingo por mi capacidad para liderar y trabajar en equipo. Soy un profesional que sabe coordinar esfuerzos, motivar a sus compañeros y garantizar que los proyectos se completen de manera efectiva. Mi habilidad para colaborar lo convierte en un miembro valioso en cualquier equipo.</p>
+        <section id="ejercicios">
+          <h2>Ejercicios pasados en clase</h2>
+          <ul>
+            <li>
+              <a 
+                href="https://github.com/MariaSalazar1/clase_1.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ejercicio 1
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://github.com/MariaSalazar1/clase_2.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ejercicio 2
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://github.com/MariaSalazar1/clase_3.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ejercicio 3
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://docs.google.com/document/d/1GhxLlFXQvF0eRphdOhFPXYZr2Ji63i-0z40E-35rXY4/edit?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ejercicio 4
+              </a>
+            </li>
+          </ul>
+        </section>
 
-                      <li><strong>Perfeccionismo:</strong></li>
-                      <p className="habilidades">Con una atención al detalle excepcional, siempre busco entregar trabajos de alta calidad. Este perfeccionismo asegura que mis proyectos cumplan consistentemente con altos estándares, beneficiando tanto a mi equipo como a los clientes.</p>
+        <section id="ejercicios">
+          <h2>Ejercicios corte 2</h2>
+          <ul>
+            <li>
+              <a 
+                href="https://github.com/MariaSalazar1/CLASE-8-DEMPL-2.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ejercicio 1
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://github.com/MariaSalazar1/cards-corte2.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Ejercicio 2
+              </a>
+            </li>
+          </ul>
+        </section>
 
-                      <li><strong>Creatividad y Pasión por el Arte:</strong></li>
-                      <p className="habilidades">Tengo un fuerte interés en los videojuegos, el dibujo y la pintura, lo que refleja una vena creativa robusta. Esta creatividad es una ventaja en cualquier proyecto que requiera un enfoque innovador y artístico.</p>
-                    </ul>
-                      <a href="index.html">Leer más</a>
-                  </div>
-              </div>
+        <a 
+          href="https://stackblitzstarters6wj8br-ccg4--8080--134daa3c.local-credentialless.webcontainer.io" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Ir al portafolio anterior
+        </a>
+      </div>
+    </div>
 
-              <div className="card">
-                  <figure>
-                      <img src="img/Films.jpg" alt=""/>
-                  </figure>
-                  <div className="contenido">
-                    <h3>Debilidades:</h3>
-                    <ul>
-                      <li><strong>Manejo de Bases de Datos:</strong></li>
-                      <p className="habilidades">En el pasado, experimenté dificultades al trabajar con bases de datos. Este desafío me ha generado cierta inseguridad en tareas similares, lo que indica un área en la que podría enfocarme para desarrollar mayor confianza y habil</p>
-                    <li><strong>Programación:</strong></li>
-                    <p className="habilidades">A pesar de mi amplio conocimiento en otras áreas, la programación es un aspecto en el que siento que necesito mejorar. Esta limitación podría afectar mi capacidad para abordar ciertos proyectos de manera autónoma o para realizar tareas que requieran una integración técnica más profunda.
-                    </p>
-
-                    <li><strong>Manejo de Bases de Datos:</strong></li>
-                    <p className="habilidades">En el pasado, experimenté dificultades al trabajar con bases de datos. Este desafío me ha generado cierta inseguridad en tareas similares, lo que indica un área en la que podría enfocarme para desarrollar mayor confianza y habilidad.
-                    </p>
-
-                    <li><strong>Comunicación y Paciencia:</strong></li>
-                    <p className="habilidades">Aunque soy una líder competente y una excelente trabajadora en equipo, reconozco que necesito mejorar en la comunicación y en la paciencia. Fortalecer estas habilidades blandas me permitiría manejar mejor los conflictos, dar y recibir retroalimentación constructiva, y mantener un ambiente de trabajo más positivo.
-                    </p>
-
-                    <li><strong>Manejo del Estrés:</strong></li>
-                    <p className="habilidades">El manejo del estrés es un desafío para mí, y reconozco que puedo sentirme abrumada bajo presión. Esta dificultad puede afectar mi productividad y bienestar, especialmente en situaciones que implican plazos ajustados o una carga de trabajo considerable.
-                    </p>
-                  </ul>
-                      <a href="index.html">Leer más</a>
-                  </div>
-              </div>
+              
             </main>
   </div>
 
 
-      <section id="ejercicios">
-        <h2>Ejercicios pasados en clase</h2>
-        <ul>
-          <li><a href="https://github.com/MariaSalazar1/clase_1.git">Ejercicio 1</a></li>
-          <li><a href="https://github.com/MariaSalazar1/clase_2.git">Ejercicio 2</a></li>
-          <li><a href="https://github.com/MariaSalazar1/clase_3.git">Ejercicio 3</a></li>
-          <li><a href="https://docs.google.com/document/d/1GhxLlFXQvF0eRphdOhFPXYZr2Ji63i-0z40E-35rXY4/edit?usp=sharing">Ejercicio 4</a></li>
-        </ul>
-      </section>
-
-      <section id="ejercicios">
-        <h2>Ejercicios corte 2</h2>
-        <ul>
-          <li><a href="https://github.com/MariaSalazar1/CLASE-8-DEMPL-2.git">Ejercicio 1</a></li>
-          <li><a href="https://github.com/MariaSalazar1/cards-corte2.git">Ejercicio 2</a></li>
-        </ul>
-      </section>
+      
         </div>  
     );
     

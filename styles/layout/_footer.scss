@@ -6,3 +6,18 @@
     padding-top: 1rem;
     border-top: 1px solid var(--surface-border);
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .social-icons a {
+    color: #000; /* Cambia esto por el color que prefieras */
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #0077b5; /* Color al pasar el mouse, ajusta según la red social */
+  }

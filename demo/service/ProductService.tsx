@@ -1,8 +1,8 @@
 import { Demo } from '@/types';
 
 export const ProductService = {
-    getProductsSmall() {
-        return fetch('/demo/data/products-small.json', { headers: { 'Cache-Control': 'no-cache' } })
+    getFortalezas() {
+        return fetch('/demo/data/fortalezas.json', { headers: { 'Cache-Control': 'no-cache' } })
             .then((res) => res.json())
             .then((d) => d.data as Demo.Product[]);
     },
@@ -18,8 +18,8 @@ export const ProductService = {
             .then((res) => res.json())
             .then((d) => d.data as Demo.Product[]);
     },
-    getProducts2() {
-        return fetch('/demo/data/products2.json', { headers: { 'Cache-Control': 'no-cache' } })
+    getDebilidades() {
+        return fetch('/demo/data/debilidades.json', { headers: { 'Cache-Control': 'no-cache' } })
         .then((res) => res.json())
             .then((d) => d.data2 as Demo.Product[]);
 }

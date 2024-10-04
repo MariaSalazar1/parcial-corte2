@@ -1,0 +1,44 @@
+{
+	"data2": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Manejo de Bases de Datos",
+			"description": "En el pasado, experimenté dificultades al trabajar con bases de datos. Este desafío me ha generado cierta inseguridad en tareas similares, lo que indica un área en la que podría enfocarme para desarrollar mayor confianza y habil",
+			"image": "dataBase.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1001",
+			"code": "f230fh0g3",
+			"name": "Programación",
+			"description": "A pesar de mi amplio conocimiento en otras áreas, la programación es un aspecto en el que siento que necesito mejorar. Esta limitación podría afectar mi capacidad para abordar ciertos proyectos de manera autónoma o para realizar tareas que requieran una integración técnica más profunda.",
+			"image": "programacion.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "f230fh0g3",
+			"name": "Comunicación y Paciencia.",
+			"description": "Aunque soy una líder competente y una excelente trabajadora en equipo, reconozco que necesito mejorar en la comunicación y en la paciencia. Fortalecer estas habilidades blandas me permitiría manejar mejor los conflictos, dar y recibir retroalimentación constructiva, y mantener un ambiente de trabajo más positivo.",
+			"image": "comunicacionYpaciencia.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "f230fh0g3",
+			"name": "Manejo del Estrés",
+			"description": "El manejo del estrés es un desafío para mí, y reconozco que puedo sentirme abrumada bajo presión. Esta dificultad puede afectar mi productividad y bienestar, especialmente en situaciones que implican plazos ajustados o una carga de trabajo considerable.",
+			"image": "estres.jpg",
+			"category": "Accessories",
+			"quantity": 24,
+			"rating": 5
+		}
+	]
+}
