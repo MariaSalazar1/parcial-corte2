@@ -243,13 +243,7 @@ const Dashboard = () => {
             }}
         />
     );
-    const priceBodyTemplate = (data: Demo.Product) => formatCurrency(data.price ?? 0);
-    const confirmationDialogFooter = (
-        <>
-            <Button type="button" label="No" icon="pi pi-times" onClick={() => setDisplayConfirmation(false)} text />
-            <Button type="button" label="Yes" icon="pi pi-check" onClick={() => setDisplayConfirmation(false)} text autoFocus />
-        </>
-    );
+  
 
 
 
